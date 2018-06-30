@@ -82,9 +82,9 @@ deploy:
     access_key: NhxOewLDWpAs_THJNvtKN8kZHG3r0_tkWOaJSycc
     secret_key: Cx7AJItEyNWaEG1eLvu85PpCGq0vAaX1xmvJC7c0
   - type: rsync
-    host: hexiangyu.me
-    user: hexiangyu
-    root: /home/hexiangyu/blog
+    host: 58.87.90.156
+    user: ubuntu
+    root: /home/ubuntu/blog
 
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
