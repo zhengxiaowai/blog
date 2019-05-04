@@ -1,6 +1,8 @@
 ---
 title: 「译」Golang 使用高阶函数实现依赖注入
 date: 2019-04-28 00:13:33
+categories: 
+- 翻译
 tags:
 ---
 
