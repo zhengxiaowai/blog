@@ -1,0 +1,29 @@
+<%
+let items = site.posts.map(function(item, index) {
+    return {
+        'title': item.title,
+		'path': item.path,
+		'date': date(item.date, 'YYYY-MM-DD'),
+        'year': date(item.date, 'YYYY')
+    }
+});
+
+let postsByYear = _.groupBy(items, item => item.year);
+let archivePosts = _.mapValues(
+    postsByYear, 
+    posts => _.sortBy(posts, post => post.date).reverse());
+
+const orderChapters = (chapters, func) => {
+    _.each(_.keys(chapters).reverse(), subtitle => {
+        func(chapters[subtitle], subtitle);
+    })
+}
+
+%>
+
+<%- partial('_partial/catalogue', {
+    type: "归档", 
+    chapters: archivePosts, 
+    orderChapters: orderChapters, 
+    orderPosts: _.each 
+}) %>

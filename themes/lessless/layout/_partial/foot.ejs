@@ -1,0 +1,8 @@
+
+<%- js('js/jquery-3.2.1.slim.min.js') %>
+<%- js('js/popper.min.js') %>
+<%- js('js/bootstrap.min.js') %>
+
+<% if (is_post()) { %>
+    <%- partial('_widget/disqus') %>
+<% } %>

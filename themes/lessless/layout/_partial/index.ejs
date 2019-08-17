@@ -1,0 +1,24 @@
+<div class="postcards">
+    <% page.posts.each(function(single){ %>
+        <%- partial('_partial/card', {item: single}) %>
+            <% }) %>
+
+</div>
+
+<%
+    var paging = {
+        total: page.total,
+        current: page.current,
+        isFirst: page.current == 1 ? true : false,
+        isLast: page.total == page.current ? true : false,
+        prev: {
+            text: '上一页',
+            link: page.prev_link
+        },
+        next: {
+            text: '下一页',
+            link: page.next_link
+        }
+    }
+%>
+<%- partial('_partial/paging', paging) %>
