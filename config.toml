@@ -1,0 +1,5 @@
+baseURL = 'http://hexiangyu.me/'
+languageCode = 'en-us'
+title = '正小歪 BLOG'
+theme = "paper"
+
