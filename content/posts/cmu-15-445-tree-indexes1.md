@@ -1,5 +1,5 @@
 ---
-title: "CMU 15-445/645 Lecture 6: Trees Indexes I"
+title: "CMU 15-445/645 Lecture 7: Trees Indexes I"
 date: 2022-11-11T09:15:53+08:00
 draft: false
 ---
