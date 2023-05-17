@@ -1,5 +1,5 @@
 ---
-title: "Cmu 15 445 Hash Table"
+title: "CMU 15-445/645 Lecture 6: Hash Tables"
 date: 2023-04-23T08:19:16+08:00
 draft: false
 ---
